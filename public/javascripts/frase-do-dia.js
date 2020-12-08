@@ -3,18 +3,15 @@ $(document).ready(function() {
     Funções que serão executadas no ready da página. 
     */
     closeSidebar();
-    $('#trocar-frase').click(ajax_frase_aleatoria);   
-    if($('.autor').text() == ""){
-        ajax_frase_aleatoria();
-    }
+    ajax_frase_do_dia();
 })
 
-function ajax_frase_aleatoria(){
+function ajax_frase_do_dia(){
     /* 
-    Busca uma frase aleatória do servidor 
+    Busca a frase do dia.
     */
     $.ajax({
-        url: "http://matheusmonego.pythonanywhere.com/frases_historicas/aleatoria/",
+        url: "http://matheusmonego.pythonanywhere.com/frases_historicas/dia/",
         data: {},
         type: "GET",
         success: function(response) {

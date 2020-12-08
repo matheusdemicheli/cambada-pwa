@@ -1,10 +1,15 @@
 doctype html
 html
   head
-    title= title
+    title Cambada
+    meta(name='viewport' content='width=device-width, initial-scale=1')
     link(rel="manifest", href="/manifest.json")
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')    
+    link(rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3pro.css')
+    link(rel='stylesheet' href='https://www.w3schools.com/lib/w3-theme-teal.css')
     script(type="module" src="/pwabuilder-sw-register.js")
   body
+    include ./includes/menu.jade
+    include ./includes/cabecalho.jade    
     block content
     block script

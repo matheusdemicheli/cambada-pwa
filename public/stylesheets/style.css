@@ -1,8 +1,128 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+@media (max-width: 240px) 
+{
+  #container
+   {
+      width: 90%;
+      margin-top: auto;
+      height: calc(100% - 9rem);
+   }
+   #mySidebar
+   {
+      margin-right: auto !important;
+      margin-top: auto;
+      height: 89%;
+      position: absolute !important;
+      left: 0;
+      bottom: 0;
+      height: calc(100% - 9rem);
+   }
+}
+@media (min-width: 240px) 
+{
+  #container
+   {
+      width: 90%;
+      margin-top: auto;
+      height: calc(100% - 7rem);
+   }
+   #mySidebar
+   {
+      margin-right: auto !important;
+      margin-top: auto;
+      height: 89%;
+      position: absolute !important;
+      left: 0;
+      bottom: 0;
+      height: calc(100% - 7rem);
+   }
+}
+@media (min-width: 340px) 
+{
+  #container
+   {
+      width: 90%;
+      margin-top: auto;
+      height: calc(100% - 5rem);
+   }
+   #mySidebar
+   {
+      margin-right: auto !important;
+      margin-top: auto;
+      height: 89%;
+      position: absolute !important;
+      left: 0;
+      bottom: 0;
+      height: calc(100% - 5rem);
+   }
 }
 
-a {
-  color: #00B7FF;
+html,body {
+  font-family: sans-serif !important;
+  font-size: 14px !important;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  color: #000;
+  background-color: #f6f6f6;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+  border-bottom: 1px solid #acacac;
+  height: auto;
+  display: flex !important;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: nowrap;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  border-top: 1px solid #acacac;
+  background-color: #f6f6f6;
+  /* padding: 25px; */
+  height: 8%;
+}
+
+#trocar-frase {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+}
+
+#conteudo{
+  margin-top: 6%;
+  margin-left: auto;
+  margin-right: auto;  
+  padding: 5%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+#conteudo .data {
+  font-style: italic;
+}
+
+#conteudo .frase{
+  margin-top: 25px;
+  font-size: 13px !important;
+}
+
+#menu {
+  padding-top: 5%;
+}
+
+.item-menu {
+  padding: 10% !important;
 }
