@@ -12,7 +12,7 @@ function ajax_frase_aleatoria(){
      */
     exibir_loading();
     $.ajax({
-        url: "http://matheusmonego.pythonanywhere.com/frases_historicas/aleatoria/",
+        url: "https://matheusmonego.pythonanywhere.com/frases_historicas/aleatoria/",
         data: {},
         type: "GET",
         success: function(response) {
