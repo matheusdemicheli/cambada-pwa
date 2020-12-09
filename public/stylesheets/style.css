@@ -3,9 +3,7 @@
 {
   #container
    {
-      width: 90%;
-      margin-top: auto;
-      height: calc(100% - 9rem);
+      height: calc(100% - 18rem);
    }
    #mySidebar
    {
@@ -22,9 +20,7 @@
 {
   #container
    {
-      width: 90%;
-      margin-top: auto;
-      height: calc(100% - 7rem);
+      height: calc(100% - 14rem);
    }
    #mySidebar
    {
@@ -37,13 +33,11 @@
       height: calc(100% - 7rem);
    }
 }
-@media (min-width: 340px) 
+@media (min-width: 346px) 
 {
   #container
    {
-      width: 90%;
-      margin-top: auto;
-      height: calc(100% - 5rem);
+      height: calc(100% - 10rem);
    }
    #mySidebar
    {
@@ -89,8 +83,7 @@ footer {
   width: 100%;
   border-top: 1px solid #acacac;
   background-color: #f6f6f6;
-  /* padding: 25px; */
-  height: 8%;
+  padding: 10px;
 }
 
 #trocar-frase {
@@ -98,16 +91,27 @@ footer {
   background-color: #0d6efd;
   border-color: #0d6efd;
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   font-weight: bold;
+}
+
+#container {
+  width: 90%;
+  margin-top: auto;
+  margin-bottom: auto;
+  overflow: auto;
 }
 
 #conteudo{
   margin-top: 6%;
   margin-left: auto;
   margin-right: auto;  
-  padding: 5%;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  padding: 4%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid gray;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-top: 1px solid lightgray;
 }
 
 #conteudo .data {
@@ -119,10 +123,21 @@ footer {
   font-size: 13px !important;
 }
 
-#menu {
-  padding-top: 5%;
+#mySidebar {
+  display: none;
+}
+
+#gif_load {
+  display: none;
+  width: 100px;
+  margin: auto
 }
 
 .item-menu {
-  padding: 10% !important;
+  padding: 20px !important;
+  white-space: nowrap !important;
+}
+
+.w3-bar-block .w3-bar-item {
+  border-bottom: 1px solid lightgray !important;
 }

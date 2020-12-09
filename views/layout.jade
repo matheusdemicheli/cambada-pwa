@@ -10,6 +10,9 @@ html
     script(type="module" src="/pwabuilder-sw-register.js")
   body
     include ./includes/menu.jade
-    include ./includes/cabecalho.jade    
-    block content
+    include ./includes/cabecalho.jade
+    img#gif_load(src="images/load.gif", alt="Carregando")
+    block content    
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+    script(src="javascripts/menu.js")
     block script

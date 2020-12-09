@@ -1,18 +1,16 @@
 $(document).ready(function() {
-    /* 
-    Funções que serão executadas no ready da página. 
-    */
-    closeSidebar();
-    $('#trocar-frase').click(ajax_frase_aleatoria);   
-    if($('.autor').text() == ""){
-        ajax_frase_aleatoria();
-    }
+    /**
+     * Funções que serão executadas no ready da página. 
+     */
+    ajax_frase_aleatoria();
+    $('#trocar-frase').click(ajax_frase_aleatoria);
 })
 
 function ajax_frase_aleatoria(){
-    /* 
-    Busca uma frase aleatória do servidor 
-    */
+    /**
+     * Busca uma frase aleatória do servidor 
+     */
+    exibir_loading();
     $.ajax({
         url: "http://matheusmonego.pythonanywhere.com/frases_historicas/aleatoria/",
         data: {},
@@ -21,24 +19,26 @@ function ajax_frase_aleatoria(){
             $('.autor').text(response['autor']);
             $('.data').text(response['data']);
             $('.frase').html(response['texto']);
+            exibir_conteudo();
         },
     })
 }
 
-function checkSidebar() {
-    /*
-    Verifica se a barra lateral está exibida ou escondida, e inverte o seu estado.
-    */
-    side_bar = $('#mySidebar');
-    
-    if (side_bar.css('display') == 'block'){
-        side_bar.hide();
-    }
-    else {
-        side_bar.show();
-    }
+function exibir_loading(){
+    /**
+     * Esconde conteúdo atual e exibe gif de loading.
+     */
+    var img_loading = $('#gif_load').clone();
+   
+    $('#conteudo div').hide();
+    $('#conteudo .autor').after(img_loading);
+    img_loading.show();
 }
 
-function closeSidebar() {
-    $('#mySidebar').hide();
+function exibir_conteudo(){
+    /**
+     * Esconde o gif de loading e exibe o conteúdo.
+     */
+    $('#conteudo img').remove();
+    $('#conteudo div').show();
 }
