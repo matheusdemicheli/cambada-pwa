@@ -5,7 +5,7 @@
     "description": "Os Bons Tempos da Cambada",
     "start_url": "/",
     "background_color": "#2f3d58",
-    "theme_color": "#2f3d58",        
+    "theme_color": "#2f3d58",
     "orientation": "any",
     "display": "standalone",
     "icons": [
@@ -13,5 +13,6 @@
             "src": "/images/icon512.png",
             "sizes": "512x512"
         }
-    ]
+    ],
+    "gcm_sender_id": "735448613591"
 }
