@@ -53,8 +53,8 @@ function registrar(subscription){
   /**
    * Registra a assinatura no servidor.
    */
-  var url = 'https://matheusmonego.pythonanywhere.com/app/registrar/';
-  var url = 'http://localhost:8001/webpush/save_information/';
+  var url = 'https://matheusmonego.pythonanywhere.com/webpush/save_information/';
+  //var url = 'http://localhost:8001/webpush/save_information/';
 
   fetch(url, {
     method: 'post',
