@@ -34,7 +34,7 @@ function assinar(subscription, registration){
     return subscription;
   }
 
-  const vapidPublicKey = 'BFg1VdS8njeZur1aWfWxm6SXuqp60zBBmdNnMTYDYqNIkpeKQz0ab6WfVmMcOnDKWPTjgzfMPWyDffvmT9H8Pos';
+  const vapidPublicKey = 'BDnic52EBWr9E4m6JVjDFjvHUzrXn3ybWz74XGFhjgw5oIh021fF1IxWQwt8-BsWLw6_7qpWGlNON9g_SADJtpg';
   // Chrome doesn't accept the base64-encoded (string) vapidPublicKey yet
   // urlBase64ToUint8Array() is defined in /tools.js
   const convertedVapidKey = vapidPublicKey //urlBase64ToUint8Array(vapidPublicKey);
