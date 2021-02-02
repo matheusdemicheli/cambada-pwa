@@ -1,6 +1,6 @@
 $(document).ready(function() {
     /**
-     * Funções que serão executadas no ready da página. 
+     * Funções que serão executadas no ready da página.
      */
     ajax_frase_aleatoria();
     $('#trocar-frase').click(ajax_frase_aleatoria);
@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 function ajax_frase_aleatoria(){
     /**
-     * Busca uma frase aleatória do servidor 
+     * Busca uma frase aleatória do servidor
      */
     exibir_loading();
     $.ajax({
@@ -29,7 +29,7 @@ function exibir_loading(){
      * Esconde conteúdo atual e exibe gif de loading.
      */
     var img_loading = $('#gif_load').clone();
-   
+
     $('#conteudo div').hide();
     $('#conteudo .autor').after(img_loading);
     img_loading.show();

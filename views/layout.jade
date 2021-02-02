@@ -4,15 +4,16 @@ html
     title Cambada
     meta(name='viewport' content='width=device-width, initial-scale=1')
     link(rel="manifest", href="/manifest.json")
-    link(rel='stylesheet', href='/stylesheets/style.css')    
+    link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3pro.css')
     link(rel='stylesheet' href='https://www.w3schools.com/lib/w3-theme-teal.css')
-    script(type="module" src="/pwabuilder-sw-register.js")
-  body
+    script(type="module" src="/sw.js")
+    body
     include ./includes/menu.jade
     include ./includes/cabecalho.jade
     img#gif_load(src="images/load.gif", alt="Carregando")
-    block content    
+    block content
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+    script(type="module" src="javascripts/notificacoes.js")
     script(src="javascripts/menu.js")
     block script
