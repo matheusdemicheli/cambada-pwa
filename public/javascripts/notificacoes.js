@@ -37,7 +37,7 @@ function assinar(subscription, registration){
   const vapidPublicKey = 'BFg1VdS8njeZur1aWfWxm6SXuqp60zBBmdNnMTYDYqNIkpeKQz0ab6WfVmMcOnDKWPTjgzfMPWyDffvmT9H8Pos';
   // Chrome doesn't accept the base64-encoded (string) vapidPublicKey yet
   // urlBase64ToUint8Array() is defined in /tools.js
-  const convertedVapidKey = urlBase64ToUint8Array(vapidPublicKey);
+  const convertedVapidKey = vapidPublicKey //urlBase64ToUint8Array(vapidPublicKey);
   // const convertedVapidKey = vapidPublicKey;
 
   // Otherwise, subscribe the user (userVisibleOnly allows to specify that we don't plan to
